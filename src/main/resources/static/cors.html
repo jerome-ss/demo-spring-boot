@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跨域请求</title>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $.ajax({
+            url: "http://localhost/test/cross",
+            type: "GET",
+            data: {
+                name: "苏志达"
+            },
+            success: function(data, status, xhr) {
+                console.log(data);
+                alert(data.name);
+            }
+        });
+    </script>
+</body>
+</html>
